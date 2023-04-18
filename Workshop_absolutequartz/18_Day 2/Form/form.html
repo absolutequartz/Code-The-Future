@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Wise Survey 2023</title>
+</head>
+<body>
+    <form action="destination.html">
+        <center><legend><b>Personal Details</b></legend></center>
+        <fieldset class="Personal Details">
+            <label for="name"><b>Enter Your Name</b></label> <br>
+            <input type="text" name="name"> <br> <br>
+            <label for="dob"><b> Your DOB</b></label> <br>
+            <input type="date"> <br> <br>
+            <label for="age"> <b> Which Range Does Your Age lie?</b></label> <br>
+            <input type="checkbox" name="age"> 0-10 <br>
+            <input type="checkbox" name="age"> 11-30 <br>
+            <input type="checkbox" name="age"> 31-50 <br>
+            <input type="checkbox" name="age"> 50+
+            <br> <br>
+            <label for="gender"><b>Specify your gender</b></label> <br>
+            <input type="checkbox" name="gender"> Male <br>
+            <input type="checkbox" name="gender"> Female <br>
+            <input type="checkbox" name="gender" disabled>Others <br> <br>
+            <!-- <strong>Note:</strong> No other Gender exists :) -->
+        </fieldset>
+        <br>
+        <br>
+
+
+        <center><legend><b>MCQs</b></legend></center>
+        <fieldset class="MCQs">
+            <label for="vehicle"><b>What is the vehicle of  your choice?</b></label> <br> <br>
+            <select name="vehicle" id="vehicle">
+                <option value="Gcar">Gas Cars</option>
+                <option value="EV">EVs</option>
+                <option value="Gcar">Two wheelers</option>
+            </select>
+            <br> <br>
+            <b><label for="GOAT">Who's Your GOAT pick?</label></b> <br>
+            <input list="GOATS" name="GOAT" id="GOAT">
+            <datalist id="GOATS">
+                <option value="Michael Jordan">
+                <option value="Michael Phelps">
+                <option value="Tiger Woods">
+                <option value="Andrew Tate">
+                <option value="Messi">
+                <option value="CR7">
+            </datalist> <br> <br>
+            <b><label for="browser">Choose your browser from the list:</label></b> <br>
+            <input list="browsers" name="browser" id="browser">
+            <datalist id="browsers">
+            <option value="Edge">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+            </datalist> <br>
+            <br>
+            <b><label for="music">Choose Your Favorite Music Genre:</label></b>
+            <br> <input type="radio" checked> Pop
+            <br> <input type="radio"> Jazz
+            <br> <input type="radio"> Rock
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
