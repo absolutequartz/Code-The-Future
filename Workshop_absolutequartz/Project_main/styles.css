@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* The navbar */
@@ -13,19 +13,24 @@
     background-size: cover;
 }
 
-.navbar{
-    height: 10vh;
+.wrapper >p{
+    font-size: 40px;
+    padding-top: 120px;
 }
-
+.navbar{
+    height: 20vh;
+    width: 100%;
+}
+    
 .navbar >.navbarul{
     display: flex;
     /* display: block; */
     float: right;
 }
 .navbarlists{
-    /* text-transform: uppercase; */
+    text-transform: uppercase;
     text-decoration: none;
     list-style: none;
     padding-right: 17px;
-    
+    background-color: rgba(0, 0, 0, 0.4);
 }
