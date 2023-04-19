@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.grdcontainer{
+    background-color: burlywood;
+    display: grid;
+    grid-template-rows: repeat(4,100px);
+    grid-template-columns: 100px 100px 100px 100px;
+}
