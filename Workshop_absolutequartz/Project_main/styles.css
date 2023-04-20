@@ -7,10 +7,12 @@
 /* Header */
 .wrapper{
     height: 80vh;
-    background: url(./images/wrapbg.jpg);
+    background: rgba(0, 0, 0, 0.5) url(./images/wrapbg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-blend-mode: darken;
+    background-attachment: fixed;
 }
 
 /* The Navbar */
@@ -19,7 +21,9 @@
     height: 10vh;
     width: 100%;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: transparent;
+    backdrop-filter: blur(25px);
+    z-index: 10;
 }
 
 .navbar >img{
@@ -64,20 +68,74 @@ a:hover{
 }
 
 /* Main Portion */
+#fleet{
+    position: relative;
+}
+
+#fleet::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent, black);
+    z-index: 3;
+}
+
+main{
+    position: relative;
+}
 
 body{
-    background: white;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .fleet{
     width: 80%;
-    margin-left: 150px;
-    /* border: 4px solid black; */
+    /* margin-left: 150px; */
+    transform: translate(-50%,0%);
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    /* border: 1px solid black; */
     padding: 14px;
     border-radius: 20px;
-    /* background-color: rgba(0, 0, 0, 0.2); */
+    background-color: rgba(0, 0, 0, 0.1);
 }
+
 
 .infleet >p{
     float: right;
+    font-size: 20px;
 }
+
+.reviews{
+    width: 80%;
+    margin-top: 400px;
+    transform: translate(-50%, 0%);
+    position: relative;
+    top: 0%;
+    left: 50%;
+    /* border: 1px solid black; */
+    padding: 14px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.inreviews{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.inreviews >p{
+    font-size: 20px;
+}
+
+/* Footer */
+
+footer{
+    width: 70%;
+}
+
