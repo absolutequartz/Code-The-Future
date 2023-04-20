@@ -99,15 +99,24 @@ body{
     /* top: 50%; */
     left: 50%;
     /* border: 1px solid black; */
-    padding: 14px;
+    padding: 34px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+.infleet{
+    width: 100%;
+}
+
+.infleet >img{
+    float: left;
+    width: 40%;
+}
 
 .infleet >p{
     float: right;
     font-size: 20px;
+    width: 55%;
 }
 
 .reviews{
@@ -118,19 +127,28 @@ body{
     top: 0%;
     left: 50%;
     /* border: 1px solid black; */
-    padding: 14px;
+    padding: 34px;
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.1);
+    height: 30vh;
 }
 
 .inreviews{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 100%;
+    
 }
 
 .inreviews >p{
     font-size: 20px;
+    float: right;
+    width: 86%;
+}
+
+
+.pfp1{
+    border-radius: 120px;
+    float: left;
+    width: 12%;
 }
 
 /* Footer */
@@ -138,4 +156,3 @@ body{
 footer{
     width: 70%;
 }
-
