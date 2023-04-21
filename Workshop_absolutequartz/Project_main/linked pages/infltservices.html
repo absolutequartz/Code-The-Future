@@ -1,1 +1,65 @@
-<!-- just add a video lol -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In Flight Services</title>
+    <style>
+        /* Defaults */
+        *{margin: 0; padding: 0;}
+         
+        body{
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        /* Header */
+        h1{
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+        }
+        /* Main */
+        .gridcontainer{
+            display: grid;
+            grid-template-areas: 
+            'header header'
+            'cat1 cat1';
+            border: 5px solid white;
+            padding: 80px;
+            margin: 100px;
+            border-radius: 120px;
+        }
+
+
+        .vid1{ grid-area: header;}
+        .vid2{grid-area: cat1; width: 20%;}
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>In Flight Services</h1> <br>
+    </header>
+    <main>
+        <center>
+       <div class="gridcontainer">
+            <div class="vid1">
+                <video width="300px" height="300px" controls>
+                    <source src="../उडान सुरक्षा _ Safety regulations Nepal Airlines  - Nepali.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="vid2">
+                <video width="150px" height="150px" controls>
+                    <source src="../Himalaya Adventure - Flying Nepal Airlines A330 to Kathmandu.mp4" type="video/mp4">
+                </video>
+                <video width="150px" height="150px" controls>
+                    <source src="../TRIP REPORT_Nepal Airlines_Dubai-Kathmandu_A330-200.mp4" type="video/mp4"> 
+                </video>
+            </div>
+            <!-- <div class="vid4"></div> -->
+        </div>
+    </center>
+    </main>
+</body>
+</html>
